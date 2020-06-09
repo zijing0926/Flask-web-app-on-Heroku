@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+    background-image: url_for('static', filename='crude.jpg');
+    }
+    </style>
+
+    <style>
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: left;
+      background-color: white;
+      margin-top: 20px;}
+
+    </style>
+    <!-- <link rel="icon" href="favicon.ico"> -->
+
+    <title>Let's Predict Crude Oil Price!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+          <h2>News Sentiment Analysis on Crude Oil Future Prices</h2>
+          <ul>
+            <li><a href="/about">Introducing the Project and the Author</a></li>
+            <li><a href="/stats ">Data and Statistical Analysis</a></li>
+            <li><a href="/comov ">The Comovement of Price Volatility and News Release</a></li>
+            <li><a href="/word ">News Sentiment Analysis and Word Clouds</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-left">
+    <h3>Price Prediction Form</h3>
+
+          <div>
+              <form action="result" method="get">
+
+              <br>
+              <label for="News">News Body</label>
+<br>
+              <input type="text" id="News" name="News" style="height:100px; width: 400px;">
+              <br>
+              <br>
+
+
+
+
+              <input type="submit" value="Submit">
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

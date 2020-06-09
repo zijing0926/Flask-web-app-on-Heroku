@@ -1,0 +1,94 @@
+<html>
+<body>
+    <h3>Price Prediction Form</h3>
+
+<div>
+  <form action="/result" method="POST">
+    <label for="Subject">Subject</label>
+    <input type="text" id="Subject" name="Subject">
+    <br>
+    <label for="News">News Body</label>
+    <input type="text" id="News" name="News">
+    <br>
+    <label for="day">Day</label>
+    <select id="day" name="day">
+      <option value="0">8:00 am - 4:00 pm</option>
+      <option value="1">4:00 pm - 00:00</option>
+      <option value="2">00:00 - 8:00 am</option>
+    </select>
+    <br>
+    <label for="week">Week</label>
+    <select id="week" name="week">
+      <option value="0">weekends</option>
+      <option value="1">weekdays</option>
+    </select>
+    <br>
+    <label for="month">Month</label>
+    <select id="month" name="month">
+      <option value="0">1st to 10th</option>
+      <option value="1">11th to 20th</option>
+      <option value="2">21th to 31th</option>
+    </select>
+    <br>
+    <label for="sr">Source</label>
+    <select id="sr" name="sr">
+       <option value="37">AMR</option>
+       <option value="34">AXS</option>
+       <option value="44">BBF</option>
+       <option value="42">BBO</option>
+       <option value="21">BDR</option>
+       <option value="7">BFW</option>
+       <option value="15">BI</option>
+       <option value="10">BLG</option>
+       <option value="5">BN</option>
+       <option value="46">BNE</option>
+       <option value="49">BRR</option>
+       <option value="23">CNN</option>
+       <option value="52">CNP</option>
+       <option value="4">DJ</option>
+       <option value="39">DML</option>
+       <option value="51">DPA</option>
+       <option value="16">ECT</option>
+       <option value="33">FEX</option>
+       <option value="41">FII</option>
+       <option value="2">FM9</option>
+       <option value="22">FOR</option>
+       <option value="32">FTI</option>
+       <option value="31">HAA</option>
+       <option value="35">IBD</option>
+       <option value="28">LOT</option>
+       <option value="38">MNT</option>
+       <option value="13">MTN</option>
+       <option value="50">NEF</option>
+       <option value="48">NPW</option>
+       <option value="12">NS1</option>
+       <option value="11">NS2</option>
+       <option value="3">NS5</option>
+       <option value="0">NS6</option>
+       <option value="45">NS7</option>
+      <option value="1">NS8</option>
+      <option value="25">PTI</option>
+      <option value="26">SYH</option>
+      <option value="29">TEL</option>
+      <option value="30">TOI</option>
+      <option value="19">TOR</option>
+      <option value="27">TSD</option>
+      <option value="20">TST</option>
+      <option value="18">TWT</option>
+      <option value="40">USA</option>
+      <option value="8">WE1</option>
+      <option value="47">WE2</option>
+      <option value="9">WE3</option>
+      <option value="43">WE5</option>
+      <option value="17">WE8</option>
+      <option value="6">WE9</option>
+      <option value="36">WSJ</option>
+      <option value="24">YNA</option>
+
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>

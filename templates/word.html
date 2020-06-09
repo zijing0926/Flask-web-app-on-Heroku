@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+    background-image: url_for('static', filename='crude.jpg');
+    }
+    </style>
+
+    <style>
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: left;
+      background-color: white;
+      margin-top: 20px;}
+
+    </style>
+
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+            <h2>News Sentiment Analysis</h2>
+             <br>
+            <h3> The Effect of Words: </h3>
+             <img src="{{url_for('static', filename='coef_dist.png')}}" class="center" style="width:40%">
+<p> Note: Each point in the x axis stands for one unique word from all the news articles, its value in the
+  y axis stands for its effect in affecting crude future prices.</p>
+             <br>
+
+             <h3> Logistic Regression with TFIDF </h3>
+
+             <p> By conducting news sentiment analysis, we can find out what are
+               the words that are strictly related to price increase and price decrease.
+              I use logistic regression and tfidf of each word to find out what are the
+              top20 words contributing to a price increase and decrease in these word clouds.
+
+             <div class="row">
+                <div class="column">
+                  <img src="{{url_for('static', filename='w4.png')}}" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="{{url_for('static', filename='w3.png')}}" style="width:100%">
+                </div>
+            </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
